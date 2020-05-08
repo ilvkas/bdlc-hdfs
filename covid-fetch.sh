@@ -12,6 +12,13 @@ function pause(){
 }
 
 ## ##################################################
+## check and/or create local directories
+echo "Create local directories"
+test -d ./data || mkdir ./data
+
+pause 'Press [Enter] key to continue: get covid data'
+
+## ##################################################
 ## get data
 echo "Get the COVID-19 JSON Data"
 # curl -sSLG "$(covid_data_api)" > data/covid_unsorted.json
