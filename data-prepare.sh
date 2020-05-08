@@ -43,4 +43,19 @@ echo "cleaning up (stock)"
 mkdir orig
 mv CHFJPY.zip EURCHF.zip GBPCHF.zip USDCHF.zip orig/
 
+pause 'Press [Enter] key to continue: clear first line of txt'
+
+## ##################################################
+## clear first line
+tail -n +2 CHFJPY.txt > CHFJPY2.txt
+tail -n +2 EURCHF.txt > EURCHF2.txt
+tail -n +2 GBPCHF.txt > GBPCHF2.txt
+tail -n +2 USDCHF.txt > USDCHF2.txt
+
+mv CHFJPY2.txt CHFJPY.txt
+mv EURCHF2.txt EURCHF.txt
+mv GBPCHF2.txt GBPCHF.txt
+mv USDCHF2.txt USDCHF.txt
+
 pause 'Press [Enter] key to continue: push data to hdfs'
+
