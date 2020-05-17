@@ -26,7 +26,7 @@ get_json_object(test, '$.geoId') AS LandID,
 get_json_object(test, '$.countryterritoryCode') AS LandCode,
 get_json_object(test, '$.popData2018') AS Population,
 get_json_object(test, '$.continentExp') AS Kontinent
-FROM covid_data;
+FROM covid_19_json;
 
 -- --------------------------------------------------
 -- show infos
