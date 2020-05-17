@@ -23,36 +23,3 @@ cd ~/repos
 cd bdlc-hdfs/
 ./run.sh
 ```
-
-NOT DONE YET:
-!!!!!!!!!!!!!!
-### Run again
-
-```
-./process.sh
-```
-
-
-### Run by schedule
-
-```
-crontab -l
-nano crontab
-crontab crontab
-crontab -l
-```
-
-### Stop schedule
-
-```
-crontab -l
-crontab -r
-crontab -l
-```
-
-### Remove example
-
-```
-./remove.sh
-```
-!!!!!!!!!!!!!!

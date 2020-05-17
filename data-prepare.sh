@@ -22,7 +22,6 @@ pause 'Press [Enter] key to continue: create hdfs directories'
 ## create hdfs directories
 echo "creating HDFS Directories"
 hdfs dfs -mkdir -p /user/${USER}/pro/
-hdfs dfs -mkdir -p /user/${USER}/pro/etl/
 
 pause 'Press [Enter] key to continue: prepare data'
 

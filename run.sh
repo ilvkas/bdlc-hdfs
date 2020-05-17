@@ -24,6 +24,10 @@ function pause(){
 ./covid-fetch.sh
 
 ## ##################################################
+## fetch covid data
+./covid-push2hdfs.sh
+
+## ##################################################
 ## ddl
 # hive_cli -f create.sql
 
