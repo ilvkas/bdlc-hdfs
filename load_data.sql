@@ -12,20 +12,20 @@ load data inpath '/user/bd01/pro/CHFJPY.txt' into table src_usdchf_txt;
 
 -- --------------------------------------------------
 -- CREATE VIEW
-DROP VIEW IF EXISTS covid_test;
-CREATE VIEW IF NOT EXISTS covid_test AS
+DROP VIEW IF EXISTS covid_split;
+CREATE VIEW IF NOT EXISTS covid_split AS
 SELECT
-get_json_object(test, '$.dateRep') AS Datum,
-get_json_object(test, '$.day') AS Tag,
-get_json_object(test, '$.month') AS Monat,
-get_json_object(test, '$.year') AS Jahr,
-get_json_object(test, '$.cases') AS Faelle,
-get_json_object(test, '$.deaths') AS Tote,
-get_json_object(test, '$.countriesAndTerritories') AS Land,
-get_json_object(test, '$.geoId') AS LandID,
-get_json_object(test, '$.countryterritoryCode') AS LandCode,
-get_json_object(test, '$.popData2018') AS Population,
-get_json_object(test, '$.continentExp') AS Kontinent
+get_json_object(data, '$.dateRep') AS Datum,
+get_json_object(data, '$.day') AS Tag,
+get_json_object(data, '$.month') AS Monat,
+get_json_object(data, '$.year') AS Jahr,
+get_json_object(data, '$.cases') AS Faelle,
+get_json_object(data, '$.deaths') AS Tote,
+get_json_object(data, '$.countriesAndTerritories') AS Land,
+get_json_object(data, '$.geoId') AS LandID,
+get_json_object(data, '$.countryterritoryCode') AS LandCode,
+get_json_object(data, '$.popData2018') AS Population,
+get_json_object(data, '$.continentExp') AS Kontinent
 FROM covid_19_json;
 
 -- --------------------------------------------------
