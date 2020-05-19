@@ -34,14 +34,6 @@ unzip EURCHF.zip
 unzip GBPCHF.zip
 unzip USDCHF.zip
 
-pause 'Press [Enter] key to continue: cleaning up data'
-
-## ##################################################
-## clean up
-echo "cleaning up (stock)"
-mkdir orig
-mv CHFJPY.zip EURCHF.zip GBPCHF.zip USDCHF.zip orig/
-
 pause 'Press [Enter] key to continue: clear first line of txt'
 
 ## ##################################################
