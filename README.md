@@ -15,11 +15,15 @@ cd ~/repos
 git clone https://github.com/ilvkas/bdlc-hdfs
 ```
 
-### First run
+### Run
 ```
 lxc shell cl-hpelc1-50-gw-01-lx-ub18
 su -l bd01
 cd ~/repos
 cd bdlc-hdfs/
 ./run.sh
+```
+#### Run without SQL
+```
+./run_wo_sql.sh
 ```
