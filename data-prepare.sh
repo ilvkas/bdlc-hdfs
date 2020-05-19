@@ -51,10 +51,5 @@ tail -n +2 EURCHF.txt > EURCHF2.txt
 tail -n +2 GBPCHF.txt > GBPCHF2.txt
 tail -n +2 USDCHF.txt > USDCHF2.txt
 
-mv CHFJPY2.txt CHFJPY.txt
-mv EURCHF2.txt EURCHF.txt
-mv GBPCHF2.txt GBPCHF.txt
-mv USDCHF2.txt USDCHF.txt
-
-pause 'Press [Enter] key to continue: push data to hdfs'
+pause 'Press [Enter] key to continue: ETL data'
 
