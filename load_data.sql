@@ -5,10 +5,10 @@ use bdlc_data_pro;
 -- --------------------------------------------------
 -- LOAD Data into tables
 load data inpath '/user/bd01/pro/covid_data.json' into table covid_19_json;
-load data inpath '/user/bd01/pro/USDCHF.txt' into table src_chfjpy_txt;
-load data inpath '/user/bd01/pro/GBPCHF.txt' into table src_eurchf_txt;
-load data inpath '/user/bd01/pro/EURCHF.txt' into table src_gbpchf_txt;
-load data inpath '/user/bd01/pro/CHFJPY.txt' into table src_usdchf_txt;
+load data inpath '/user/bd01/pro/USDCHF.txt' into table src_usdchf_txt;
+load data inpath '/user/bd01/pro/GBPCHF.txt' into table src_gbpchf_txt;
+load data inpath '/user/bd01/pro/EURCHF.txt' into table src_eurchf_txt;
+load data inpath '/user/bd01/pro/CHFJPY.txt' into table src_chfjpy_txt;
 
 -- --------------------------------------------------
 -- CREATE VIEW
