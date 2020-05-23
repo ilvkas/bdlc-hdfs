@@ -12,9 +12,13 @@ function pause(){
 }
 
 ## ##################################################
+## create folder in userhome zeppelin
+if ! hdfs dfs -test -d /user/zeppelin/pro/; then hdfs dfs -mkdir /user/zeppelin/pro/; fi
+
+## ##################################################
 ## push files to hdfs
 echo "pushing data to hdfs"
-hdfs dfs -put -f stock/CHFJPY.txt /user/${USER}/pro/
-hdfs dfs -put -f stock/EURCHF.txt /user/${USER}/pro/
-hdfs dfs -put -f stock/GBPCHF.txt /user/${USER}/pro/
-hdfs dfs -put -f stock/USDCHF.txt /user/${USER}/pro/
+hdfs dfs -put -f stock/CHFJPY.txt /user/zeppelin/pro/
+hdfs dfs -put -f stock/EURCHF.txt /user/zeppelin/pro/
+hdfs dfs -put -f stock/GBPCHF.txt /user/zeppelin/pro/
+hdfs dfs -put -f stock/USDCHF.txt /user/zeppelin/pro/
