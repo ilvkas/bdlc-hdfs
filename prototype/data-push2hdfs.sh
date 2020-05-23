@@ -18,3 +18,5 @@ hdfs dfs -put -f stock/CHFJPY.txt /user/${USER}/pro/
 hdfs dfs -put -f stock/EURCHF.txt /user/${USER}/pro/
 hdfs dfs -put -f stock/GBPCHF.txt /user/${USER}/pro/
 hdfs dfs -put -f stock/USDCHF.txt /user/${USER}/pro/
+
+pause 'Press [Enter] key to continue: fetch covid data'
