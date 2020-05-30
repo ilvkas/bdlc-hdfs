@@ -19,4 +19,9 @@ pause 'Press [Enter] key to continue: load data into tables'
 ## ##################################################
 ## load data into tables
 hive_cli -f load_data.sql
+pause 'Press [Enter] key to continue: load data again'
+
+## ##################################################
+## load data into tables
+./data-push2hdfs_end.sh
 pause 'Press [Enter] key to continue: end script'
